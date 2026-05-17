@@ -1,12 +1,6 @@
-░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓███████▓▒░░▒▓████████▓▒░▒▓████████▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░     
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░     
-░▒▓███████▓▒░░▒▓████████▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓███████▓▒░░▒▓██████▓▒░    ░▒▓█▓▒░     
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░      ░▒▓█▓▒░         ░▒▓█▓▒░     
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░      ░▒▓█▓▒░         ░▒▓█▓▒░     
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓████████▓▒░      ░▒▓█▓▒░      ░▒▓████████▓▒░  ░▒▓█▓▒░     
-                                                                                                                 
- > "Bharat Jodo! One commit at a time." — Rahul Gandhi
+![Rahul Cycling](rahulllaaaaa.gif)
+
+> "Bharat Jodo! One commit at a time." — Rahul Gandhi
 
 ---
 
@@ -21,36 +15,39 @@ He never stops cycling. Just like the padyatra.
 
 ## ⚡ FEATURES
 
-[✓] Rahul cycles left to right across your entire screen
-[✓] Click him → dashboard opens + random quote appears
-[✓] Project tracker with drag-to-update progress bars
-[✓] Rahul reacts dynamically based on your progress %
-[✓] Add / delete projects with custom categories
-[✓] Notes + comments per project
-[✓] Persistent storage — survives app restarts
-[✓] Always on top — he's always watching
+- ✅ Rahul cycles across your entire screen continuously
+- ✅ Click him → dashboard opens + random quote appears
+- ✅ Project tracker with drag-to-update progress bars
+- ✅ Rahul reacts dynamically based on your progress %
+- ✅ Add / delete projects with custom categories
+- ✅ Notes + comments per project
+- ✅ Persistent storage — survives app restarts
+- ✅ Always on top — he's always watching
 
 ---
 
 ## 📊 RAHUL'S REACTIONS
 
-0% → 😴 Arre yaar... start karo!
-25% → 🐢 Thoda aur effort chahiye!
-50% → 💪 Theek hai, keep going!
-75% → 🔥 Wah! Bharat jod raha hai!
-99% → 🚀 Almost there! Ship it!
-100% → 🎉 Jai Hind!
-DONE → ✅ Rahul is proud. Nyay mila!
+| Progress | Reaction |
+|----------|----------|
+| 0% | 😴 Arre yaar... start karo! |
+| 25% | 🐢 Thoda aur effort chahiye! |
+| 50% | 💪 Theek hai, keep going! |
+| 75% | 🔥 Wah! Bharat jod raha hai! |
+| 99% | 🚀 Almost there! Ship it! |
+| 100% | 🎉 Jai Hind! |
+| DONE | ✅ Rahul is proud. Nyay mila! |
 
 ---
 
 ## 🛠 TECH STACK
 
-Runtime   → Electron
-Frontend  → HTML + CSS + Vanilla JS
-Storage   → JSON file (persistent)
-Pet Image → Pixel art generated via ChatGPT
-Font      → Press Start 2P (Google Fonts)
+| Layer | Tech |
+|-------|------|
+| Runtime | Electron |
+| Frontend | HTML + CSS + Vanilla JS |
+| Storage | JSON file (persistent) |
+| Font | Press Start 2P |
 
 ---
 
@@ -78,7 +75,7 @@ rahul-pet/
 │   │   ├── index.html
 │   │   ├── pet.css
 │   │   └── pet.js
-│   └── dashboard/           # Project tracker
+│   └── dashboard/           # Project tracker dashboard
 │       ├── index.html
 │       ├── dashboard.css
 │       └── dashboard.js
@@ -98,5 +95,3 @@ rahul-pet/
 ---
 
 *He cycles. He motivates. He judges. He is Rahul.*
-
-![Rahul Cycling](rahulllaaaaa.gif)
