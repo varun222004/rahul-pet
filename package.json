@@ -1,0 +1,17 @@
+{
+  "name": "rahul-pet",
+  "version": "1.0.0",
+  "description": "Pixel Rahul Gandhi desktop pet + project tracker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Varun V",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^36.3.1"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}

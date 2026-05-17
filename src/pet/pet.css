@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#rahul {
+  position: absolute;
+  bottom: 40px;
+  width: 180px;
+  image-rendering: pixelated;
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+}
+
+.speech-bubble {
+  position: absolute;
+  background: #ccff00;
+  border: 3px solid #000;
+  padding: 6px 12px;
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: bold;
+  color: #000;
+  max-width: 200px;
+  text-align: center;
+  display: none;
+  z-index: 10;
+  box-shadow: 3px 3px 0px #000;
+}
+
+.speech-bubble.visible {
+  display: block;
+}

@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ccff00;
+  color: #000;
+  font-family: 'Press Start 2P', monospace;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Titlebar ── */
+.titlebar {
+  background: #000;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-app-region: drag;
+  border-bottom: 4px solid #ccff00;
+  flex-shrink: 0;
+}
+
+.titlebar-title {
+  font-size: 11px;
+  color: #ccff00;
+  letter-spacing: 1px;
+  -webkit-app-region: drag;
+}
+
+.close-btn {
+  background: #ccff00;
+  border: 3px solid #ccff00;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  -webkit-app-region: no-drag;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.close-btn:hover {
+  background: #000;
+  color: #ccff00;
+}
+
+/* ── Quote Bar ── */
+.quote-bar {
+  background: #000;
+  border-bottom: 4px solid #000;
+  padding: 10px 16px;
+  font-size: 7px;
+  color: #ccff00;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+/* ── Add Project Bar ── */
+.add-project-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.add-project-bar input {
+  flex: 1;
+  background: #000;
+  border: 3px solid #000;
+  color: #ccff00;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  padding: 8px 10px;
+  outline: none;
+}
+
+.add-project-bar input::placeholder {
+  color: #555;
+}
+
+.add-project-bar select {
+  background: #000;
+  border: 3px solid #000;
+  color: #ccff00;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  padding: 8px 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-project-bar button {
+  background: #000;
+  border: 3px solid #000;
+  color: #ccff00;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  padding: 8px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.add-project-bar button:hover {
+  background: #ccff00;
+  color: #000;
+}
+
+/* ── Main ── */
+.main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+  background: #ccff00;
+}
+
+/* ── Projects Grid ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* ── Card ── */
+.card {
+  background: #000;
+  border: 3px solid #000;
+  padding: 14px;
+  position: relative;
+  transition: transform 0.1s, box-shadow 0.1s;
+  box-shadow: 4px 4px 0px #888;
+}
+
+.card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #888;
+}
+
+.card.completed {
+  opacity: 0.5;
+}
+
+.card.completed .card-title {
+  text-decoration: line-through;
+  color: #555;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+
+.card-title {
+  font-size: 8px;
+  color: #ccff00;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.card-tag {
+  font-size: 6px;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 2px solid;
+  font-family: 'Press Start 2P', monospace;
+  flex-shrink: 0;
+}
+
+.tag-dev  { background: #ccff00; color: #000; border-color: #ccff00; }
+.tag-qa   { background: #00ffcc; color: #000; border-color: #00ffcc; }
+.tag-auto { background: #ff00cc; color: #000; border-color: #ff00cc; }
+
+/* ── Progress ── */
+.progress-label {
+  font-size: 6px;
+  color: #888;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.progress-track {
+  background: #222;
+  height: 10px;
+  width: 100%;
+  margin-bottom: 8px;
+  border: 2px solid #333;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.1s;
+  pointer-events: none;
+}
+
+.progress-fill.done   { background: #00ffcc; }
+.progress-fill.active { background: #ccff00; }
+.progress-fill.todo   { background: #333; }
+
+/* ── Rahul Reaction ── */
+.rahul-reaction {
+  font-size: 7px;
+  color: #ccff00;
+  margin-bottom: 8px;
+  min-height: 12px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ── Next Todo ── */
+.next-label {
+  font-size: 6px;
+  color: #555;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.next-todo {
+  font-size: 7px;
+  color: #ccff00;
+  border-left: 3px solid #ccff00;
+  padding-left: 8px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* ── Card Actions ── */
+.card-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.card-actions button {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border: 2px solid;
+}
+
+.btn-done {
+  background: transparent;
+  border-color: #00ffcc;
+  color: #00ffcc;
+}
+
+.btn-done:hover {
+  background: #00ffcc;
+  color: #000;
+}
+
+.btn-notes {
+  background: transparent;
+  border-color: #ccff00;
+  color: #ccff00;
+}
+
+.btn-notes:hover {
+  background: #ccff00;
+  color: #000;
+}
+
+.btn-delete {
+  background: transparent;
+  border-color: #ff4444;
+  color: #ff4444;
+  margin-left: auto;
+}
+
+.btn-delete:hover {
+  background: #ff4444;
+  color: #000;
+}
+
+/* ── Notes indicator ── */
+.notes-indicator {
+  font-size: 6px;
+  color: #888;
+  margin-top: 6px;
+}
+
+/* ── Modal ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.visible {
+  display: flex;
+}
+
+.modal {
+  background: #000;
+  border: 4px solid #ccff00;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 8px 8px 0px #ccff00;
+}
+
+.modal-title {
+  font-size: 10px;
+  color: #ccff00;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.modal textarea {
+  width: 100%;
+  height: 160px;
+  background: #111;
+  border: 3px solid #333;
+  color: #ccff00;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  line-height: 1.8;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.modal-actions button {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 3px solid;
+}
+
+#saveNotes {
+  background: #ccff00;
+  border-color: #ccff00;
+  color: #000;
+}
+
+#saveNotes:hover {
+  background: #000;
+  color: #ccff00;
+}
+
+#cancelNotes {
+  background: transparent;
+  border-color: #ff4444;
+  color: #ff4444;
+}
+
+#cancelNotes:hover {
+  background: #ff4444;
+  color: #000;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #ccff00; }
+::-webkit-scrollbar-thumb { background: #000; }
+.tag-research { background: #ff9900; color: #000; border-color: #ff9900; }
+.tag-learning { background: #00ccff; color: #000; border-color: #00ccff; }
+.tag-other    { background: #aaaaaa; color: #000; border-color: #aaaaaa; }

@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "QA Scout",
+    "tag": "qa",
+    "tagLabel": "QA Tool",
+    "status": "active",
+    "progress": 80,
+    "nextTodo": "Add Maestro flow support",
+    "notes": "",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "name": "Pit Wall F1 Dashboard",
+    "tag": "dev",
+    "tagLabel": "Dev",
+    "status": "todo",
+    "progress": 0,
+    "nextTodo": "Setup React + Ergast API",
+    "notes": "",
+    "completed": false
+  },
+  {
+    "id": 3,
+    "name": "Race Day Flutter App",
+    "tag": "dev",
+    "tagLabel": "Dev",
+    "status": "todo",
+    "progress": 0,
+    "nextTodo": "Setup Flutter project structure",
+    "notes": "",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "name": "Maestro Flows",
+    "tag": "auto",
+    "tagLabel": "Automation",
+    "status": "todo",
+    "progress": 0,
+    "nextTodo": "Write Spotify login flow",
+    "notes": "",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "name": "Playwright — Flipkart",
+    "tag": "auto",
+    "tagLabel": "Automation",
+    "status": "todo",
+    "progress": 0,
+    "nextTodo": "Setup Playwright project",
+    "notes": "",
+    "completed": false
+  },
+  {
+    "id": 6,
+    "name": "Selenium — Naukri",
+    "tag": "auto",
+    "tagLabel": "Automation",
+    "status": "todo",
+    "progress": 0,
+    "nextTodo": "Setup Selenium + ChromeDriver",
+    "notes": "",
+    "completed": false
+  },
+  {
+    "id": 1779024464439,
+    "name": "qa",
+    "tag": "dev",
+    "tagLabel": "Dev",
+    "status": "todo",
+    "progress": 0,
+    "nextTodo": "Get started!",
+    "notes": "",
+    "completed": false
+  }
+]
